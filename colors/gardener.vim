@@ -38,7 +38,7 @@ if has("gui_running")
 
     hi StatusLineNC     guibg=#ffeecc	  guifg=black	   gui=none 
     hi StatusLine       guibg=#cc4455	  guifg=white	   gui=bold 
-    hi VertSplit        guibg=NONE	  guifg=red	   gui=bold,italic
+    hi VertSplit        guibg=NONE	  guifg=darkgrey	   gui=bold,italic
 
     hi DiffAdd          guibg=#446688     guifg=fg	       gui=none 
     hi DiffChange       guibg=#558855     guifg=fg	       gui=none 

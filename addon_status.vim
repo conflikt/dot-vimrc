@@ -1,6 +1,7 @@
 function Statusline()
-  set statusline=%r%m%=(%l/%L)
-  "  set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}
+  set statusline=»%t«
+  set statusline+=%r%m%=(%l/%L)
+  " set statusline+=»%{synIDattr(synID(line('.'),col('.'),1),'name')}«
 endfunction
 
 function Titlestring()
@@ -14,6 +15,6 @@ endfunction
 
 " StatusLine
 set laststatus=2
-"call Statusline()
-"call Titlestring()
+call Statusline()
+call Titlestring()
 call EnableCursor()

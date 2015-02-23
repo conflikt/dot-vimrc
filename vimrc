@@ -5,6 +5,16 @@ set nobackup
 set nowritebackup
 set noswapfile
 set fillchars=stl:-,stlnc:-,vert:│
+set listchars=tab:>»,trail:~
+set list
+set fillchars+=vert:\!
+
+" Enable Expr method folding
+set foldenable
+set foldmethod=indent
+set foldlevel=1
+set shiftwidth=2
+
 
 " set textwidth=80
 " set colorcolumn=+1
@@ -14,6 +24,7 @@ source ~/.vim/ag_bind.vim
 " Remappings
 inoremap jk <esc>
 nnoremap <leader>gb :Gblame<cr>
+let g:NERDTreeDirArrows = 0
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 let g:gitgutter_sign_added = '++'
@@ -21,15 +32,13 @@ let g:gitgutter_sign_modified = '+-'
 let g:gitgutter_sign_removed = '--'
 let g:gitgutter_sign_modified_removed = "**"
 
-let g:NERDTreeDirArrows = 0
-nnoremap -  :NERDTreeToggle<CR>
-
 "let g:gitgutter_sign_column_always = 1
+nnoremap - :NERDTreeToggle<Cr>
 
 " set relativenumber
 set t_Co=256
 set background=dark
-set guifont=Ubuntu\ Mono:h15
+set guifont=Osaka-Mono:h15
 
 " Funky ctrlp addon settings
 let g:ctrlp_extensions = ['funky']
@@ -81,6 +90,10 @@ let g:rsenseUseOmniFunc = 1
 
 nnoremap ; :
 let g:solarized_termcolors = 256
-colorscheme gardener
-" colorscheme badwolf
+"colorscheme ir_black
+if has("gui_running")
+  colorscheme muon
+else
+  colorscheme muon
+endif
 filetype plugin indent on
