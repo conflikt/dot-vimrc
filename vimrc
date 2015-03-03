@@ -7,7 +7,7 @@ set noswapfile
 set fillchars=stl:-,stlnc:-,vert:│
 set listchars=tab:>»,trail:~
 set list
-set fillchars+=vert:\!
+" set fillchars+=vert:\!
 
 " Enable Expr method folding
 set foldenable
@@ -38,7 +38,7 @@ nnoremap - :NERDTreeToggle<Cr>
 " set relativenumber
 set t_Co=256
 set background=dark
-set guifont=Osaka-Mono:h15
+set guifont=Ayuthaya:h13
 
 " Funky ctrlp addon settings
 let g:ctrlp_extensions = ['funky']
@@ -92,8 +92,8 @@ nnoremap ; :
 let g:solarized_termcolors = 256
 "colorscheme ir_black
 if has("gui_running")
-  colorscheme muon
+  colorscheme tesla
 else
-  colorscheme muon
+  colorscheme neverland-darker
 endif
 filetype plugin indent on

@@ -17,3 +17,7 @@ How to Install/Use
 + Run `vim +BundleClean` command to clean the the bundles you don't need any more after removing from `bundles.vim` file.
 + Or alternatively you can run `vim +BundleInstall! +BundleClean +q` to update/clean bundles in one single command.
 + Add your own changes if you need, to vimrc file and create a symbolic link for vimrc file to ~/.vimrc. `ln -s ~/.vim/vimrc ~/.vimrc`
+
+
+# Update (Switched to Plug)
+
