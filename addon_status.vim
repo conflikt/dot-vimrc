@@ -1,7 +1,7 @@
 function Statusline()
   set statusline=»%t«
   set statusline+=%r%m%=(%l/%L)
-  set statusline+=»%{synIDattr(synID(line('.'),col('.'),1),'name')}«
+  "set statusline+=»%{synIDattr(synID(line('.'),col('.'),1),'name')}
 endfunction
 
 function Titlestring()

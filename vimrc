@@ -10,10 +10,10 @@ set list
 " set fillchars+=vert:\!
 
 " Enable Expr method folding
-set foldenable
-set foldmethod=indent
-set foldlevel=1
-set shiftwidth=2
+"set foldenable
+"set foldmethod=indent
+"set foldlevel=1
+"set shiftwidth=2
 
 
 " set textwidth=80
@@ -38,7 +38,7 @@ nnoremap - :NERDTreeToggle<Cr>
 " set relativenumber
 set t_Co=256
 set background=dark
-set guifont=Ayuthaya:h13
+set guifont=Anonymous\ Pro\ Minus:h14
 
 " Funky ctrlp addon settings
 let g:ctrlp_extensions = ['funky']
@@ -92,8 +92,9 @@ nnoremap ; :
 let g:solarized_termcolors = 256
 "colorscheme ir_black
 if has("gui_running")
-  colorscheme tesla
+  colorscheme camo
+  "professional
 else
-  colorscheme neverland-darker
+  colorscheme camo
 endif
 filetype plugin indent on
