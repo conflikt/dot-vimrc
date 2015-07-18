@@ -8,6 +8,7 @@ Plug 'tpope/vim-surround'
 Plug 'flazz/vim-colorschemes'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
+Plug 'FelikZ/ctrlp-py-matcher'
 
 Plug 'tpope/vim-rails'
 Plug 'slim-template/vim-slim'

@@ -17,4 +17,4 @@ endfunction
 set laststatus=2
 call Statusline()
 call Titlestring()
-call EnableCursor()
+"call EnableCursor()

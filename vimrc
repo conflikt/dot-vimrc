@@ -2,6 +2,7 @@ source ~/.vim/bundle.vim
 syntax on
 syntax enable
 set nobackup
+set background=dark
 set nowritebackup
 set noswapfile
 set fillchars=stl:-,stlnc:-,vert:│
@@ -24,7 +25,6 @@ source ~/.vim/ag_bind.vim
 " Remappings
 inoremap jk <esc>
 nnoremap <leader>gb :Gblame<cr>
-let g:NERDTreeDirArrows = 0
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 let g:gitgutter_sign_added = '++'
@@ -37,8 +37,7 @@ nnoremap - :NERDTreeToggle<Cr>
 
 " set relativenumber
 set t_Co=256
-set background=dark
-set guifont=Anonymous\ Pro\ Minus:h14
+set guifont=Consolas:h14
 
 " Funky ctrlp addon settings
 let g:ctrlp_extensions = ['funky']
@@ -91,10 +90,5 @@ let g:rsenseUseOmniFunc = 1
 nnoremap ; :
 let g:solarized_termcolors = 256
 "colorscheme ir_black
-if has("gui_running")
-  colorscheme camo
-  "professional
-else
-  colorscheme camo
-endif
+colorscheme less
 filetype plugin indent on
