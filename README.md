@@ -20,4 +20,18 @@ How to Install/Use
 
 
 # Update (Switched to Plug)
++ Clone this repo with `git clone https://github.com/sandeepkrao/dot-vimrc.git .vim`. Take backup for you currently existing .vim folder.
++ Create `autoload` directory within the existing .vim folder.
+  ~~~
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  ~~~
++ This will install the `vim-plug` in autoload folder
++ Run `vim +PlugInstall` command to install all the bundle dependencies.
++ Run `vim +PlugUpdate` command to update the bundles.
++ Run `vim +PlugStatus` command to check the current status.
++ Run `vim +PlugClean` command to clean the the bundles you don't need any more after removing from `bundles.vim` file.
++ Or alternatively you can run `vim +PlugInstall +PlugClean +q` to update/clean bundles in one single command.
++ Add your own changes if you need, to vimrc file and create a symbolic link for vimrc file to ~/.vimrc. `ln -s ~/.vim/vimrc ~/.vimrc`
+
 

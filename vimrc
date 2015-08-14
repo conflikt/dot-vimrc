@@ -1,6 +1,6 @@
 source ~/.vim/bundle.vim
 syntax on
-syntax enable
+"syntax enable
 set nobackup
 set background=dark
 set nowritebackup
@@ -24,28 +24,29 @@ source ~/.vim/ag_bind.vim
 
 " Remappings
 inoremap jk <esc>
-nnoremap <leader>gb :Gblame<cr>
-let g:gitgutter_realtime = 0
-let g:gitgutter_eager = 0
-let g:gitgutter_sign_added = '++'
-let g:gitgutter_sign_modified = '+-'
-let g:gitgutter_sign_removed = '--'
-let g:gitgutter_sign_modified_removed = "**"
+" nnoremap <leader>gb :Gblame<cr>
+"let g:gitgutter_realtime = 0
+"let g:gitgutter_eager = 0
+"let g:gitgutter_sign_added = '++'
+"let g:gitgutter_sign_modified = '+-'
+"let g:gitgutter_sign_removed = '--'
+"let g:gitgutter_sign_modified_removed = "**"
 
 "let g:gitgutter_sign_column_always = 1
-nnoremap - :NERDTreeToggle<Cr>
+nnoremap - :NERDTreeTabsToggle<Cr>
 
 " set relativenumber
+set number
 set t_Co=256
-set guifont=Consolas:h14
+set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h14
 
 " Funky ctrlp addon settings
-let g:ctrlp_extensions = ['funky']
-nnoremap <Leader>m :CtrlPFunky<Cr>
+"let g:ctrlp_extensions = ['funky']
+"nnoremap <Leader>m :CtrlPFunky<Cr>
 nnoremap <C-b> :CtrlPBuffer<Cr>
-nnoremap <Leader>M :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
-nnoremap <leader>w :%s/\s\+$//g<CR>
-let g:ctrlp_funky_syntax_highlight = 1
+"nnoremap <Leader>M :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+"nnoremap <leader>w :%s/\s\+$//g<CR>
+"let g:ctrlp_funky_syntax_highlight = 1
 
 " Remove sidebars
 set guioptions-=T  "remove toolbar
@@ -64,8 +65,8 @@ set shiftwidth=2
 set expandtab
 
 " Rails
-let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_rails = 1
+"let g:rubycomplete_buffer_loading = 1
+"let g:rubycomplete_rails = 1
 
 " DON'T USE arrow keys.
 noremap <Up> <NOP>
@@ -88,7 +89,6 @@ map <D-0> :tablast<Cr>
 let g:rsenseUseOmniFunc = 1
 
 nnoremap ; :
-let g:solarized_termcolors = 256
-"colorscheme ir_black
-colorscheme less
+"let g:solarized_termcolors = 256
+colorscheme dusk
 filetype plugin indent on
