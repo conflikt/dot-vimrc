@@ -24,21 +24,20 @@ source ~/.vim/ag_bind.vim
 
 " Remappings
 inoremap jk <esc>
-" nnoremap <leader>gb :Gblame<cr>
-"let g:gitgutter_realtime = 0
-"let g:gitgutter_eager = 0
-"let g:gitgutter_sign_added = '++'
-"let g:gitgutter_sign_modified = '+-'
-"let g:gitgutter_sign_removed = '--'
-"let g:gitgutter_sign_modified_removed = "**"
+nnoremap <leader>gb :Gblame<cr>
+let g:ctrlp_working_path_mode = 0
 
-"let g:gitgutter_sign_column_always = 1
-nnoremap - :NERDTreeTabsToggle<Cr>
+nnoremap - :EasyTreeToggle<Cr>
 
-" set relativenumber
+set relativenumber
 set number
 set t_Co=256
-set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h14
+set guifont=Fira\ Mono\ Medium:h14
+let g:airline_powerline_fonts = 1
+let s:airline_theme_defined = 1
+let g:airline_theme='luna'
+"set guifont=m+\ 1m\ for\ Powerline:h13
+"set guifont=Source\ Code\ Pro\ for\ Powerline:h16
 
 " Funky ctrlp addon settings
 "let g:ctrlp_extensions = ['funky']
@@ -90,5 +89,6 @@ let g:rsenseUseOmniFunc = 1
 
 nnoremap ; :
 "let g:solarized_termcolors = 256
-colorscheme dusk
+let g:gruvbox_italic=1
+colorscheme gruvbox
 filetype plugin indent on
