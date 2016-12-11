@@ -1,71 +1,29 @@
-source ~/.vim/bundle.vim
-syntax on
-"syntax enable
-set nobackup
-set background=dark
-set nowritebackup
-set noswapfile
-set fillchars=stl:-,stlnc:-,vert:│
-set listchars=tab:>»,trail:~
-set list
-" set fillchars+=vert:\!
-
-" Enable Expr method folding
-"set foldenable
-"set foldmethod=indent
-"set foldlevel=1
-"set shiftwidth=2
-
-
-" set textwidth=80
-" set colorcolumn=+1
-source ~/.vim/addon_status.vim
+source ~/.vim/plugins.vim
 source ~/.vim/ag_bind.vim
 
-" Remappings
-inoremap jk <esc>
-nnoremap <leader>gb :Gblame<cr>
-let g:ctrlp_working_path_mode = 0
-
-nnoremap - :EasyTreeToggle<Cr>
+set nobackup
+set background=light
+set nowritebackup
+set noswapfile
+"set fillchars=stl:-,stlnc:-,vert:◊
+set listchars=tab:>»,trail:~
+set list
 
 set relativenumber
 set number
 set t_Co=256
-set guifont=Fira\ Mono\ Medium:h14
-let g:airline_powerline_fonts = 1
-let s:airline_theme_defined = 1
-let g:airline_theme='luna'
-"set guifont=m+\ 1m\ for\ Powerline:h13
-"set guifont=Source\ Code\ Pro\ for\ Powerline:h16
 
-" Funky ctrlp addon settings
-"let g:ctrlp_extensions = ['funky']
-"nnoremap <Leader>m :CtrlPFunky<Cr>
 nnoremap <C-b> :CtrlPBuffer<Cr>
-"nnoremap <Leader>M :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
-"nnoremap <leader>w :%s/\s\+$//g<CR>
-"let g:ctrlp_funky_syntax_highlight = 1
-
-" Remove sidebars
-set guioptions-=T  "remove toolbar
-set guioptions-=r  "remove right-hand scroll bar
-set go-=L  "remove right-hand scroll bar
-set go-=M  "remove right-hand scroll bar
-
 " word wraps
 set linebreak
 set wrap
+let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 " Soft Tabs
+set expandtab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set expandtab
-
-" Rails
-"let g:rubycomplete_buffer_loading = 1
-"let g:rubycomplete_rails = 1
 
 " DON'T USE arrow keys.
 noremap <Up> <NOP>
@@ -85,10 +43,38 @@ map <D-8> 8gt
 map <D-9> 9gt
 map <D-0> :tablast<Cr>
 
-let g:rsenseUseOmniFunc = 1
+" Remove sidebars
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set go-=L  "remove right-hand scroll bar
+set go-=M  "remove right-hand scroll bar
 
+" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
+"let g:NERDTreeWinPos = "right"
+"map = :Tagbar<Cr>
+map - :NERDTreeToggle<Cr>
+map <C-l> :let &background = ( &background == "dark"? "light" : "dark" )<CR>
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
+" Silver searcher for vim
+let g:ag_prg="<custom-ag-path-goes-here> --vimgrep"
+let g:ag_working_path_mode="r"
+
+colorscheme two-firewatch
+set guifont=Drucifer:h14
+set antialias
+
+let g:ctrlp_working_path_mode = 0
 nnoremap ; :
-"let g:solarized_termcolors = 256
-let g:gruvbox_italic=1
-colorscheme gruvbox
-filetype plugin indent on
