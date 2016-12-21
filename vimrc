@@ -72,8 +72,8 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 let g:ag_prg="<custom-ag-path-goes-here> --vimgrep"
 let g:ag_working_path_mode="r"
 
-colorscheme two-firewatch
-set guifont=Drucifer:h14
+colorscheme lanai
+set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 set antialias
 
 let g:ctrlp_working_path_mode = 0
