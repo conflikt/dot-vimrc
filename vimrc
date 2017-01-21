@@ -2,7 +2,7 @@ source ~/.vim/plugins.vim
 source ~/.vim/ag_bind.vim
 
 set nobackup
-set background=light
+set background=dark
 set nowritebackup
 set noswapfile
 "set fillchars=stl:-,stlnc:-,vert:◊
@@ -71,9 +71,10 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 " Silver searcher for vim
 let g:ag_prg="<custom-ag-path-goes-here> --vimgrep"
 let g:ag_working_path_mode="r"
+let g:jsx_ext_required = 0
 
-colorscheme lanai
-set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+colorscheme solarized
+set guifont=Ubuntu\ Mono\ 11
 set antialias
 
 let g:ctrlp_working_path_mode = 0

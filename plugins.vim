@@ -30,5 +30,9 @@ Plug 'tpope/vim-rails'
 Plug 'slim-template/vim-slim'
 Plug 'oguzbilgic/sexy-railscasts-theme'
 Plug 'skalnik/vim-vroom'
+Plug 'KabbAmine/zeavim.vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'jaxbot/syntastic-react'
+Plug 'mxw/vim-jsx'
 
 call plug#end()
