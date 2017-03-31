@@ -35,4 +35,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'jaxbot/syntastic-react'
 Plug 'mxw/vim-jsx'
 
+Plug 'itchyny/lightline.vim'
+
 call plug#end()

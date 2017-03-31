@@ -73,9 +73,13 @@ let g:ag_prg="<custom-ag-path-goes-here> --vimgrep"
 let g:ag_working_path_mode="r"
 let g:jsx_ext_required = 0
 
-colorscheme solarized
-set guifont=Ubuntu\ Mono\ 11
+colorscheme lanai
+set guifont=Ayuthaya:h11
 set antialias
+set nofoldenable " disable folding
+
+let g:lightline = { 'colorscheme': 'wombat' }
+set laststatus=2
 
 let g:ctrlp_working_path_mode = 0
 nnoremap ; :
