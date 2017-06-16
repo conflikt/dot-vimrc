@@ -2,7 +2,7 @@ source ~/.vim/plugins.vim
 source ~/.vim/ag_bind.vim
 
 set nobackup
-set background=dark
+set background=light
 set nowritebackup
 set noswapfile
 "set fillchars=stl:-,stlnc:-,vert:◊
@@ -73,13 +73,14 @@ let g:ag_prg="<custom-ag-path-goes-here> --vimgrep"
 let g:ag_working_path_mode="r"
 let g:jsx_ext_required = 0
 
-colorscheme lanai
-set guifont=Ayuthaya:h11
+colorscheme garden
+set guifont=Inconsolata:h15
 set antialias
 set nofoldenable " disable folding
 
 let g:lightline = { 'colorscheme': 'wombat' }
 set laststatus=2
+let g:NERDTreeWinPos = "right"
 
 let g:ctrlp_working_path_mode = 0
 nnoremap ; :
