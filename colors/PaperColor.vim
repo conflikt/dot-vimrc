@@ -944,7 +944,7 @@ fun! s:set_highlightings_variable()
   call s:HL("Float", s:orange, "", "")
 
   call s:HL("Identifier", s:navy, "", "")
-  call s:HL("Function", s:foreground, "", "")
+  call s:HL("Function", s:foreground, "", "underline")
 
   call s:HL("Statement", s:pink, "", "none")
   call s:HL("Conditional", s:purple, "", s:bold)
