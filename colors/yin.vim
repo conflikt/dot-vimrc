@@ -88,7 +88,7 @@ call s:hi('String', s:palette.gray10, [], '')
 call s:hi('Number', s:palette.gray06, [], '')
 
 call s:hi('Identifier', s:palette.gray08, [], 'none')
-call s:hi('Function', s:palette.gray08, [], '')
+call s:hi('Function', s:palette.gray08, [], 'underline')
 
 call s:hi('Statement', s:palette.gray05, [], 'bold')
 call s:hi('Operator', s:palette.gray05, [], 'none')

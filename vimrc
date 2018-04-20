@@ -73,8 +73,8 @@ let g:ag_prg="<custom-ag-path-goes-here> --vimgrep"
 let g:ag_working_path_mode="r"
 let g:jsx_ext_required = 0
 
-colorscheme yin
-set guifont=Monaco:h12
+colorscheme two-firewatch
+set guifont=GB18030\ Bitmap:h12
 
 set antialias
 set nofoldenable " disable folding

@@ -43,7 +43,7 @@ hi Exception guifg=#87afd7 guibg=NONE guisp=NONE gui=NONE ctermfg=110 ctermbg=NO
 hi Float guifg=#afaf87 guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
 hi FoldColumn guifg=#87afaf guibg=#080808 guisp=NONE gui=NONE ctermfg=109 ctermbg=232 cterm=NONE
 hi Folded guifg=#87afaf guibg=#080808 guisp=#080808 gui=NONE ctermfg=109 ctermbg=232 cterm=NONE
-hi Function guifg=#5faf87 guibg=NONE guisp=NONE gui=NONE ctermfg=72 ctermbg=NONE cterm=NONE
+hi Function guifg=#5faf87 guibg=NONE guisp=NONE gui=underline ctermfg=72 ctermbg=NONE cterm=NONE
 hi Identifier guifg=#afd7af guibg=NONE guisp=NONE gui=NONE ctermfg=151 ctermbg=NONE cterm=NONE
 hi Ignore guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi IncSearch guifg=#1c1c1c guibg=#ffffaf guisp=#ffffaf gui=NONE ctermfg=234 ctermbg=229 cterm=NONE
@@ -92,7 +92,7 @@ hi Todo guifg=#080808 guibg=#d7af00 guisp=NONE gui=NONE ctermfg=232 ctermbg=178 
 hi Type guifg=#87d7d7 guibg=NONE guisp=NONE gui=NONE ctermfg=116 ctermbg=NONE cterm=NONE
 hi Typedef guifg=#87d7d7 guibg=NONE guisp=NONE gui=NONE ctermfg=116 ctermbg=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE guisp=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
-hi VertSplit guifg=#262626 guibg=#262626 guisp=NONE gui=NONE ctermfg=235 ctermbg=235 cterm=NONE
+hi VertSplit guifg=white guibg=NONE guisp=NONE gui=NONE ctermfg=235 ctermbg=235 cterm=NONE
 hi Visual guifg=#080808 guibg=#ffffaf guisp=#ffffaf gui=NONE ctermfg=232 ctermbg=229 cterm=NONE
 hi VisualNOS guifg=#080808 guibg=#d7d7af guisp=#d7d7af gui=NONE ctermfg=232 ctermbg=187 cterm=NONE
 hi WarningMsg guifg=#ff8787 guibg=NONE guisp=NONE gui=NONE ctermfg=210 ctermbg=NONE cterm=NONE
