@@ -61,6 +61,9 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+let &colorcolumn=join(range(81,999),",")
+let &colorcolumn="80,".join(range(400,999),",")
+
 "let g:NERDTreeWinPos = "right"
 "map = :Tagbar<Cr>
 map - :NERDTreeToggle<Cr>
@@ -73,8 +76,8 @@ let g:ag_prg="<custom-ag-path-goes-here> --vimgrep"
 let g:ag_working_path_mode="r"
 let g:jsx_ext_required = 0
 
-colorscheme two-firewatch
-set guifont=GB18030\ Bitmap:h12
+colorscheme base16-tomorrow-night
+set guifont=PT\ Mono:h13
 
 set antialias
 set nofoldenable " disable folding

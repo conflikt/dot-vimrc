@@ -124,7 +124,7 @@ hi rubyDefine                   gui=none        guifg=#f42873
 "hi rubyDocumentation           gui=            guifg=            guibg=
 "hi rubyException               gui=            guifg=            guibg=
 "hi rubyExprSubst                gui=none        guifg=#FF4500
-"hi rubyFunction                 gui=bold        guifg=#a6e232
+hi rubyFunction                 gui=underline        guifg=#a6e232
 "hi rubyGlobalVariable          gui=            guifg=            guibg=
 "hi rubyIdentifier              gui=            guifg=            guibg=
 hi rubyInclude                  guifg=#f42873
